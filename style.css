@@ -1,0 +1,70 @@
+body {
+  background: #FDF6E3;
+}
+h1 {
+  color: #738A14;
+  font-family: 'PT Sans', sans-serif;
+}
+h2 {
+  color: #A57800;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  color: #269186;
+  font-family: 'Varela Round', sans-serif;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+
+a:hover {
+  color: #A10090;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+}
+
+img {
+  width: 200px;
+}
+
+div {
+min-height: 50px;
+border-radius: 5px;
+}
+
+.alignement {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+.list-inline > ul > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.left-alignement {
+  text-align: left;
+  }
+.padding {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+.img-padding {
+  padding-top: 15px;
+}
+
+.text-padding {
+  padding-bottom: 10px;
+}
