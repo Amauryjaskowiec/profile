@@ -1,70 +1,396 @@
-body {
-  background: #FDF6E3;
+
+.wrapper-grey {
+background-color: #F7F7F7;
+height: 100vh;
+padding: 0 !important;
 }
-h1 {
-  color: #738A14;
-  font-family: 'PT Sans', sans-serif;
+
+
+.left-container {
+  padding: 0 !important;
+  height: 100vh;
+  width: 380px;
+  float: left;
 }
-h2 {
-  color: #A57800;
+
+.right-container {
+  padding: 0 !important;
+  height: 100vh;
+  width: 900px;
+  float: right;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.image-back {
+  padding-top: 300px;
+  background-image: url(images/online_profile_ocean.jpg);
+  background-size: cover;
+}
+
+
+.card-photo {
+  height: 100vh;
+  position: relative;
+}
+
+.card-coffee {
+  margin-top: -20px;
+  height: 100%;
+  position: relative;
+  max-width: 380px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  //color: white;
+  //background-image: url('images/online_profile.jpg');
+}
+
+
+.profile-picture {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  border: white 1px solid;
+  top: 10px;
+  left: 50px;
+}
+
+.hello {
+  position: absolute;
+  height: 130px;
+  overflow: hidden;
+  top: 10px;
+  left: 200px;
+}
+
+.card-profile-description {
+  position: absolute;
+  width: 400px;
+  height: 70vh;
+  top: 20px;
+  //right: -100px;
+}
+
+.profile-name h2 {
+  color: black;
+  padding-top: 140px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-shadow: 1px 1px 1px white;
 }
 
-h3 {
-  color: #269186;
-  font-family: 'Varela Round', sans-serif;
+.profile-name h3 {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  //text-shadow: 1px 1px 3px white;
 }
 
-p {
-  font-family: 'Varela Round', sans-serif;
+.profile-name span {
+  color: black;
+  padding-top: 140px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  text-shadow: 1px 1px 3px white;
 }
 
-a:hover {
-  color: #A10090;
+.sepa-noire {
+  width: 220px;
+  border-color: black;
 }
 
-.container {
-  width: 500px;
-  margin: auto;
+.sepa-blanche {
+  width: 180px;
+  border-color: white;
 }
 
-.card {
-  background: white;
+.sepa-blanche-small {
+  width: 100px;
+  border-color: white;
 }
 
-img {
-  width: 200px;
+.sepa-blanche-xsmall {
+  width: 60px;
+  border-color: white;
 }
 
-div {
-min-height: 50px;
-border-radius: 5px;
+.share-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
-.alignement {
+.share-link {
+  flex: 0 0 24%;
+  color: black;
+  max-width: 42px;
+  height: 42px;
+  font-size: 20px;
+  padding: 8px 0;
   text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-.list-inline > ul > li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-.left-alignement {
-  text-align: left;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  margin: 0 5px;
   }
-.padding {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 2px;
-  padding-left: 2px;
-}
-.img-padding {
-  padding-top: 15px;
+
+  .card-localisation h3 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  //text-shadow: 1px 1px 3px white;
 }
 
-.text-padding {
-  padding-bottom: 10px;
+  .card-localisation h4 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  //text-shadow: 1px 1px 3px white;
 }
+
+
+
+.btn-download {
+  margin-bottom: 50px;
+  color: white;
+  background-color: transparent;
+  border-color: white !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  width: 70%;
+  border-radius: 5px 5px 5px 5px !important;
+  outline: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-decoration: none;
+
+  &:hover {
+    color: $gray-lighter;
+    background-color: $gray-lighter;
+  }
+}
+
+ .card-localisation a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  &:hover {
+    color: $gray-lighter;
+    background-color: $gray-lighter;
+  }
+}
+
+.card-profile {
+  background-color: red;
+}
+
+.card-ocean {
+  height: 25vh;
+  position: relative;
+  max-width: 400px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+}
+
+.card-picto {
+position: absolut
+}
+
+.card-description {
+  margin: 30px;
+  flex: 0 0 20%;
+  position: relative;
+  z-index: 2;
+  height: 180px;
+ //width: 140px;
+  color: black;
+  background-size: contain !important;
+  background-image: url('images/description.png');
+  background-repeat: no-repeat;
+}
+.card-description h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: -12px;
+  margin-left: 45px;
+}
+.card-description:hover {
+  opacity: 0.2;
+}
+
+.card-education {
+  margin: 30px;
+  flex: 0 0 20%;
+  position: relative;
+  z-index: 2;
+  height: 180px;
+ //width: 140px;
+  color: black;
+  background-size: contain !important;
+  background-image: url('images/education.png');
+  background-repeat: no-repeat;
+}
+.card-education h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: -12px;
+  margin-left: 35px;
+}
+.card-education:hover {
+  opacity: 0.2;
+}
+
+.card-experience {
+  margin: 30px;
+  flex: 0 0 20%;
+  position: relative;
+  z-index: 2;
+  height: 180px;
+ //width: 140px;
+  color: black;
+  background-size: contain !important;
+  background-image: url('images/briefcase.png');
+  background-repeat: no-repeat;
+}
+.card-experience h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: -12px;
+  margin-left: 45px;
+}
+.card-experience:hover {
+  opacity: 0.2;
+}
+
+.card-knowledge {
+  margin: 30px;
+  flex: 0 0 20%;
+  position: relative;
+  z-index: 2;
+  height: 180px;
+ //width: 140px;
+  color: white;
+  background-size: contain !important;
+  background-image: url('images/Knowledge.png');
+  background-repeat: no-repeat;
+}
+.card-knowledge h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: -12px;
+  margin-left: 45px;
+}
+.card-knowledge:hover {
+  opacity: 0.2;
+}
+
+.card-skills {
+  margin: 30px;
+  flex: 0 0 20%;
+  position: relative;
+  z-index: 2;
+  height: 180px;
+ //width: 140px;
+  color: white;
+  background-size: contain !important;
+  background-image: url('images/skills.png');
+  background-repeat: no-repeat;
+}
+.card-skills h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: -12px;
+  margin-left: 65px;
+}
+.card-skills:hover {
+  opacity: 0.2;
+}
+
+.card-hobbies {
+  margin: 30px;
+  flex: 0 0 20%;
+  position: relative;
+  z-index: 2;
+  height: 180px;
+ //width: 140px;
+  color: white;
+  background-size: contain !important;
+  background-image: url('images/hobbies.png');
+  background-repeat: no-repeat;
+}
+.card-hobbies h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: absolute;
+  bottom: -12px;
+  margin-left: 45px;
+}
+.card-hobbies:hover {
+  opacity: 0.2;
+}
+
+.card-link {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+
+.big-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.hobbies-picture {
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.hobbies-text h3 {
+  padding-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+}
+.hobbies-text p {
+  padding-top: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+

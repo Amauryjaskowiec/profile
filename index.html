@@ -1,80 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Profil Amaury Jaskowiec</title>
-  <script src="https://use.fontawesome.com/f2d06ba0a7.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-<body>
-<div class="container alignement">
-  <div class="card">
-      <img src="images/photoAJ.JPG" alt="Profil AJ" class="img-padding">
-    <h1>
-      Amaury Jaskowiec
-    </h1>
-    <h2>
-      Student @Le Wagon
-    </h2>
-    <p class="text-padding">
-      Hello World ! I'm one of the outsider students of the Batch #31 !
-    </p>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+<div class="wrapper-grey">
+  <div class="container-fluid left-container">
+    <div class="card-coffee" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/online_profile.jpg');">
+          <img src="images/photoAJ.jpg" alt="Profile" class="profile-picture">
+          <img src="images/hello.png", alt="hello", class="hello">
+          <div class="profile-name text-center">
+            <h2><span>I'm</span> Amaury Jaskowiec</h2>
+            <h3>Marketing Manager & Fullstack Developer</h3>
+            <hr class="sepa-noire">
+          </div>
+          <div class="share-links">
+            <a href="https://fr.linkedin.com/in/amaury-jaskowiec-0336465b" class="share-link bg-linkedin">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="mailto:amaury.jaskowiec@gmail.com" class="share-link bg-email">
+              <i class="fa fa-envelope-o"></i>
+            </a>
+            <a href="https://github.com/Amauryjaskowiec" class="share-link bg-text">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <hr class="sepa-blanche">
+          <div class="card-localisation text-center">
+            <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Nantes, France</h3>
+            <h4>Mobile</h4>
+            <hr class="sepa-blanche-small">
+            <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span>   22 y/o    </h3>
+            <hr class="sepa-blanche-xsmall">
+            <button class="btn btn-lg btn-download" type="button">
+            <a href="/Resumes/Amaury_Jaskowiec_Resumes.zip", download>Download resume</a>
+            </button>
+          </div>
+    </div>
+    </div>
+    <div class="container-fluid right-container image-back">
+      <div class="card-description">
+        <h2 class="text-center">About me</h2>
+        <a class="card-link" data-toggle="modal" data-target="#DescriptionModal"></a>
+      </div>
+      <div class="card-education">
+        <h2 class="text-center">Education</h2>
+        <a class="card-link" data-toggle="modal" data-target="#EducationModal"></a>
+      </div>
+      <div class="card-experience">
+        <h2 class="text-center">Experience</h2>
+        <a class="card-link" data-toggle="modal" data-target="#ExperienceModal"></a>
+      </div>
+      <div class="card-knowledge">
+        <h2 class="text-center">Knowledge</h2>
+        <a class="card-link" data-toggle="modal" data-target="#KnowledgeModal"></a>
+      </div>
+      <div class="card-skills">
+        <h2 class="text-center">Skills</h2>
+        <a class="card-link" data-toggle="modal" data-target="#SkillsModal"></a>
+      </div>
+      <div class="card-hobbies">
+        <h2 class="text-center">Hobbies</h2>
+        <a class="card-link" data-toggle="modal" data-target="#HobbiesModal"></a>
+      </div>
+    </div>
   </div>
-  <div class="card list-inline padding">
-    <ul>
-      <li>
-        <a href="https://fr.linkedin.com/in/amaury-jaskowiec-0336465b">
-          <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/jean.momo/">
-          <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/channel/UC_POup-Zfqq_8lOadJmlDrw">
-          <i class="fa fa-youtube" aria-hidden="true"></i> Youtube
-        </a>
-      </li>
-    </ul>
 </div>
-<div class="card">
-  <h2>My favorite movies</h2>
-  <table>
-    <tr>
-      <td>
-        <img src="images/babysitting2.jpg" alt="babysitting2" width= 250px>
-      </td>
-      <td>
-        <h3>Babysitting 2</h3>
-        <p class="left-alignement">Sonia souhaite présenter Franck à son père, Jean-Pierre directeur d’un hôtel écologique au Brésil. Toute la bande s’y retrouve ainsi pour y passer des vacances de rêve. Un matin, les garçons partent en excursion dans la forêt amazonienne.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="images/django.jpg" alt="Django Unchained" width= 250px>
-      </td>
-      <td>
-        <h3>Django Unchained</h3>
-        <p>Django Unchained" est une oeuvre exaltante [qui] achève de consacrer, avec gourmandise, la suprématie de la dramaturgie.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="images/le loup de wallstreet.jpg" alt="Le loup de wallstreet" width= 250px>
-      </td>
-      <td>
-        <h3>Le loup de WallStreet</h3>
-        <p>L’argent. Le pouvoir. Les femmes. La drogue. Les tentations étaient là, à portée de main, et les autorités n’avaient aucune prise. Aux yeux de Jordan et de sa meute, la modestie était devenue complètement inutile. Trop n’était jamais assez…</p>
-      </td>
-    </tr>
-  </table>
+<div class="modal fade" id="DescriptionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel"><i class="fa fa-commenting" aria-hidden="true"></i>  Few words about me</h4>
+      </div>
+      <div class="modal-body big-text">
+      <h3>Currently ...</h3>
+        <p>
+          Working on entrepreneurial projects, I'm a <strong>creative mind</strong> with technical skills. My professionnal career led me towards marketing and web development (front and back). The mixing of those languages and cultures will be <strong>a punch</strong> for your projects !
+        </p>
+        <h3>Always ...</h3>
+        <p>
+          Seeking for <strong>new challenges</strong>, I want to be part of the strong movement by seing <strong>business as a force for good</strong>. I'm considering seriously what I'm here for and working everyday for a positive impact company appears to me like a minimum.
+        </p>
+      <h3>My motto is ...</h3>
+        <p>
+          Taking any experiences as a chance to <strong>improve myself</strong>, to reach my personnal and professional goals.
+        </p>
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
 </div>
+<div class="modal fade" id="EducationModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Education</h4>
+      </div>
+      <div class="modal-body big-text">
+       <h2>2016 Complementary training - Full Stack Developer</h2>
+       <h3>Le Wagon - Bordeaux  <a class="btn btn-default" href="https://www.lewagon.com/" role="button">Visit website</a></h3>
+        <p>Product and start-up oriented program
+          Attended Le Wagon Bordeaux (Batch #31)
+          <br>
+          <br>
+          9-week intensive coding bootcamp learning Back and Front-end development covering HTML, CSS, Bootstrap, JavaScript, jQuery, SQL, git, GitHub, Heroku and Ruby on Rails.
+        </p>
+      <h2>2011-2015 Bachelor's degree</h2>
+      <h3>Business School Audencia  <a class="btn btn-default" href="http://bachelors.audencia.com/" role="button">Visit website</a></h3>
+        <p> Specialization in Marketing, Communication and Sales
+        </p>
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
 </div>
-</body>
+<div class="modal fade" id="ExperienceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel"><i class="fa fa-briefcase" aria-hidden="true"></i>  Experience</h4>
+      </div>
+      <div class="modal-body big-text">
+       <h2>March 2015-February 2016</h2>
+       <h3>Marketing coordinator X-TREME Distribution  <a class="btn btn-default" href="http://www.xtreme-distribution.com" role="button">Visit website</a></h3>
+       <h4>Partnership :</h4>
+       <p>Evaluation of sponsorship effectivness for the brands GoPro, XSories and 3D Robotics</p>
+      <h4>Ambassadors management :</h4>
+        <p>Athletes and ambassadors management for the brands XSories, GoPro and 3DR to enhance brand visibility by creating content</p>
+      <h4>Product launch 3DR :</h4>
+        <p>Coordination of the marketing ressources for the drone SOLO</p>
+      <h4>Events :</h4>
+        <p> Working as partners on the events (FISE, UCI, MXGP, Fox my ride, RipCurl Gromsearch)</p>
+        <br>
+        <h2>October 2013-August 2014</h2>
+       <h3>Sustainable development project manager GLOBACTIF <a class="btn btn-default" href="http://globactif.org/" role="button">Visit website</a></h3>
+       <h4>Project management :</h4>
+       <p>Organization of a world trip to find eco-friendly solutions by meetings developing countries local actors</p>
+      <h4>Benchmarking :</h4>
+        <p>Setting appointments, reporting, networking</p>
+      <h4>Environmental education :</h4>
+        <p>Creation of an open-source program</p>
+        <br>
+        <h2>February 2013-September 2013</h2>
+       <h3>Marketing assistant VONZIPPER EUROPE (GSM Billabong) <a class="btn btn-default" href="http://eu.vonzipper.com/" role="button">Visit website</a></h3>
+       <h4>Events :</h4>
+       <p>Events organization and partners management (X-Games, NPY Cup, Poney Session, KummiYamma, TTR3* etc)</p>
+      <h4>Community management : </h4>
+        <p>Website and social networks management</p>
+      <h4>Press relations :</h4>
+        <p> Management of the PR campaigns</p>
+      <h4>Trade marketing :</h4>
+        <p> CRM, market study, merchandising</p>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="SkillsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel"><i class="fa fa-rocket" aria-hidden="true"></i> Skills</h4>
+      </div>
+      <div class="modal-body">
+       <h2>Business tools</h2>
+       <div>
+          <h4>Powerpoint</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%" data-toggle="tooltip" data-placement="top" title="Professional use">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Word</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%" data-toggle="tooltip" data-placement="top" title="Professional use">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Excel</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%" data-toggle="tooltip" data-placement="top" title="Professional use">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Photoshop</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%" data-toggle="tooltip" data-placement="top" title="Cutting out / Resizing / Photo effects / Booklet / Advertising">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Illustrator</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%" data-toggle="tooltip" data-placement="top" title="Logo creation">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Indesign</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%" data-toggle="tooltip" data-placement="top" title="Booklet & Leaflet">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4>Mailchimp</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%" data-toggle="tooltip" data-placement="top" title="Professional use">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Full-Stack Development</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%" data-toggle="tooltip" data-placement="top" title="Ruby on Rails / HTML / CSS / JS / PostgreSQL / Git / Heroku">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Video edition</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%" data-toggle="tooltip" data-placement="top" title="Able to collaborate with a production company">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <h2>Languages</h2>
+        <div>
+          <h4>French</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" data-toggle="tooltip" data-placement="top" title="Native speaker">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>English</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%" data-toggle="tooltip" data-placement="top" title="Highly proficient in spoken and written English">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Spanish</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" data-toggle="tooltip" data-placement="top" title="Good working knowledge">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>German</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%" data-toggle="tooltip" data-placement="top" title="Working knowledge">
+              <span class="sr-only"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="KnowledgeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>  Knowledge</h4>
+      </div>
+      <div class="modal-body big-text">
+      <h3>Follow my path</h3>
+        <p>
+          I made the choice of doing this Bachelor specialized in <strong>marketing</strong> and <strong>sales</strong>, to quickly take a step in the corporate world. During the 3 years program, I evolved through several internships, a gap year <strong>leading a project</strong> about <strong>sustainability</strong>, and my first position in a company.
+          <br>
+          <br>
+          I used theses experiences to develop my knowledge in marketing and communication by leading operational projects, such as <strong>managing PR</strong> and <strong>advertising</strong> campaigns, create <strong>brand content</strong> according to an ambassador program.
+          <br>
+          <br>
+          My career started about <strong>brand universe</strong> within <strong>boardsports, retail and sustainability markets</strong>.
+          <br>
+          <br>
+          The complementary training I did about <strong>web development</strong> come from a need I felt, to understand any <strong>digital project</strong> and being able to implement <strong>entrepreneurial</strong> projects.
+        </p>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="HobbiesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel"><i class="fa fa-hand-peace-o" aria-hidden="true"></i>  Hobbies</h4>
+      </div>
+      <div class="modal-body big-text hobbies-picture" style=" background-image: linear-gradient(-225deg, rgba(252, 53, 76, 0.5) 0%, rgba(10, 191, 188, 0.5) 50%), url('images/surf_panama.png');">
+        <div class="hobbies-text">
+        <h3 class="text-center">
+        I'm an extreme sports addict, pushing my limits into boardsports such as surfing, snowboarding, skateboarding and bmx !
+        <hr class="sepa-blanche">
+        I also enjoy traveling and take any chance to go on a trip ! 25 countries visited so far through Europe, Asia, Southeast Asia, Central and South America!
+        <hr class="sepa-blanche">
+        I'm a nature and water lover
+        </h3>
+        <p>*Wave surfed in May ! Bocas del Toro, Panama</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="animation.js"></script>
+  </body>
 </html>
 
